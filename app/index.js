@@ -1,0 +1,1 @@
+const mockPassportData = require('./mock-data')
