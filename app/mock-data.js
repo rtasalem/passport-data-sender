@@ -1,4 +1,4 @@
-const mockPassportData = [
+const messages = [
   {
     firstName: 'Forrest',
     lastName: 'Gump',
@@ -7,10 +7,8 @@ const mockPassportData = [
     passportNumber: 'FG123',
     issueDate: '1975-09-15',
     expiryDate: '2030-09-15',
-    contact: {
-      phone: '98765432101',
-      email: 'forrest.gump@bubbagump.com'
-    }
+    phone: '98765432101',
+    email: 'forrest.gump@bubbagump.com'
   },
   {
     firstName: 'Scarlett',
@@ -20,10 +18,8 @@ const mockPassportData = [
     passportNumber: 'SO456',
     issueDate: '1862-03-20',
     expiryDate: '1922-03-20',
-    contact: {
-      phone: '87654321098',
-      email: 'scarlett.ohara@tara.com'
-    }
+    phone: '87654321098',
+    email: 'scarlett.ohara@tara.com'
   },
   {
     firstName: 'Hannibal',
@@ -33,10 +29,8 @@ const mockPassportData = [
     passportNumber: 'HL789',
     issueDate: '1958-11-02',
     expiryDate: '2033-11-02',
-    contact: {
-      phone: '23456789012',
-      email: 'h.lecter@silenceofthelambs.com'
-    }
+    phone: '23456789012',
+    email: 'h.lecter@silenceofthelambs.com'
   },
   {
     firstName: 'Indiana',
@@ -46,10 +40,8 @@ const mockPassportData = [
     passportNumber: 'IND123',
     issueDate: '1925-12-10',
     expiryDate: '1980-12-10',
-    contact: {
-      phone: '56789012345',
-      email: 'i.jones@archaeologist.org'
-    }
+    phone: '56789012345',
+    email: 'i.jones@archaeologist.org'
   },
   {
     firstName: 'Elizabeth',
@@ -59,10 +51,8 @@ const mockPassportData = [
     passportNumber: 'ES987',
     issueDate: '1745-11-03',
     expiryDate: '1795-11-03',
-    contact: {
-      phone: '10987654321',
-      email: 'e.swann@portroyale.co.uk'
-    }
+    phone: '10987654321',
+    email: 'e.swann@portroyale.co.uk'
   },
   {
     firstName: 'Jack',
@@ -72,10 +62,8 @@ const mockPassportData = [
     passportNumber: 'JS456',
     issueDate: '1715-03-10',
     expiryDate: '1765-03-10',
-    contact: {
-      phone: '54321098765',
-      email: 'jack.sparrow@blackpearl.com'
-    }
+    phone: '54321098765',
+    email: 'jack.sparrow@blackpearl.com'
   },
   {
     firstName: 'Ebenezer',
@@ -85,10 +73,8 @@ const mockPassportData = [
     passportNumber: 'ES789',
     issueDate: '1820-08-01',
     expiryDate: '1870-08-01',
-    contact: {
-      phone: '98701234567',
-      email: 'e.scrooge@bahhumbug.co.uk'
-    }
+    phone: '98701234567',
+    email: 'e.scrooge@bahhumbug.co.uk'
   },
   {
     firstName: 'Atticus',
@@ -98,10 +84,8 @@ const mockPassportData = [
     passportNumber: 'AF567',
     issueDate: '1915-08-30',
     expiryDate: '1965-08-30',
-    contact: {
-      phone: '87650123456',
-      email: 'a.finch@maycomb.us'
-    }
+    phone: '87650123456',
+    email: 'a.finch@maycomb.us'
   },
   {
     firstName: 'Holden',
@@ -111,10 +95,8 @@ const mockPassportData = [
     passportNumber: 'HC123',
     issueDate: '1950-09-03',
     expiryDate: '2000-09-03',
-    contact: {
-      phone: '98765012345',
-      email: 'h.caulfield@catcher.com'
-    }
+    phone: '98765012345',
+    email: 'h.caulfield@catcher.com'
   },
   {
     firstName: 'Tyler',
@@ -124,10 +106,8 @@ const mockPassportData = [
     passportNumber: 'TD456',
     issueDate: '1985-04-22',
     expiryDate: '2045-04-22',
-    contact: {
-      phone: '12345098765',
-      email: 't.durden@fightclub.com'
-    }
+    phone: '12345098765',
+    email: 't.durden@fightclub.com'
   },
   {
     firstName: 'Neo',
@@ -137,10 +117,8 @@ const mockPassportData = [
     passportNumber: 'NEO123',
     issueDate: '1999-03-31',
     expiryDate: '2099-03-31',
-    contact: {
-      phone: '56789012345',
-      email: 'neo@matrix.com'
-    }
+    phone: '56789012345',
+    email: 'neo@matrix.com'
   },
   {
     firstName: 'Arya',
@@ -150,10 +128,8 @@ const mockPassportData = [
     passportNumber: 'ARYA456',
     issueDate: '301 AL',
     expiryDate: '330 AL',
-    contact: {
-      phone: '32109876543',
-      email: 'arya.stark@winterfell.org'
-    }
+    phone: '32109876543',
+    email: 'arya.stark@winterfell.org'
   },
   {
     firstName: 'Tyrion',
@@ -163,10 +139,8 @@ const mockPassportData = [
     passportNumber: 'TYRION789',
     issueDate: '285 AL',
     expiryDate: '335 AL',
-    contact: {
-      phone: '45678901234',
-      email: 'tyrion.lannister@casterlyrock.com'
-    }
+    phone: '45678901234',
+    email: 'tyrion.lannister@casterlyrock.com'
   },
   {
     firstName: 'Geralt',
@@ -176,10 +150,8 @@ const mockPassportData = [
     passportNumber: 'GERALT321',
     issueDate: '1202',
     expiryDate: '1302',
-    contact: {
-      phone: '65432109876',
-      email: 'geralt@witcher.net'
-    }
+    phone: '65432109876',
+    email: 'geralt@witcher.net'
   },
   {
     firstName: 'Ender',
@@ -189,10 +161,8 @@ const mockPassportData = [
     passportNumber: 'ENDER678',
     issueDate: '1998-05-05',
     expiryDate: '2098-05-05',
-    contact: {
-      phone: '89012345678',
-      email: 'ender@battle.net'
-    }
+    phone: '89012345678',
+    email: 'ender@battle.net'
   },
   {
     firstName: 'Bilbo',
@@ -202,10 +172,8 @@ const mockPassportData = [
     passportNumber: 'BILBO456',
     issueDate: '2918',
     expiryDate: '3018',
-    contact: {
-      phone: '23456789012',
-      email: 'bilbo@bagend.com'
-    }
+    phone: '23456789012',
+    email: 'bilbo@bagend.com'
   },
   {
     firstName: 'Frodo',
@@ -215,10 +183,8 @@ const mockPassportData = [
     passportNumber: 'FRODO789',
     issueDate: '2980',
     expiryDate: '3080',
-    contact: {
-      phone: '89012345670',
-      email: 'frodo@bagend.com'
-    }
+    phone: '89012345670',
+    email: 'frodo@bagend.com'
   },
   {
     firstName: 'Alice',
@@ -228,10 +194,8 @@ const mockPassportData = [
     passportNumber: 'AW456',
     issueDate: '2010-08-20',
     expiryDate: '2030-08-20',
-    contact: {
-      phone: '87654321098',
-      email: 'alice.wonderland@example.com'
-    }
+    phone: '87654321098',
+    email: 'alice.wonderland@example.com'
   },
   {
     firstName: 'Jon',
@@ -241,10 +205,8 @@ const mockPassportData = [
     passportNumber: 'JON321',
     issueDate: '300 AL',
     expiryDate: '350 AL',
-    contact: {
-      phone: '34567890123',
-      email: 'jon.snow@castleblack.org'
-    }
+    phone: '34567890123',
+    email: 'jon.snow@castleblack.org'
   },
   {
     firstName: 'Gandalf',
@@ -254,11 +216,9 @@ const mockPassportData = [
     passportNumber: 'GANDALF567',
     issueDate: 'Unknown',
     expiryDate: 'Unknown',
-    contact: {
-      phone: '87654321098',
-      email: 'gandalf@middleearth.com'
-    }
+    phone: '87654321098',
+    email: 'gandalf@middleearth.com'
   }
 ]
 
-module.exports = mockPassportData
+module.exports = messages
