@@ -9,5 +9,5 @@ Refer to the [documentation](https://github.com/rtasalem/passport-data-sender/bl
 ## Getting Started
 Run the following command:
 ```
-node app/index
+cd app && node index
 ```
