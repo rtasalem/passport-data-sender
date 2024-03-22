@@ -7,7 +7,7 @@ This repo is 1 of 3 that were created based on a [Service Bus exercise](https://
 ## Documentation
 Refer to the [documentation](https://github.com/rtasalem/passport-data-sender/blob/main/docs/DOCS.md) for detailed notes on development.
 ## Getting Started
-Run the following command:
+Run the following command to send messages to the Service Bus queue:
 ```
 cd app && node index
 ```
