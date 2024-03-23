@@ -1,6 +1,6 @@
 # Passport Data Sender
 Simple Node.js application for sending mock passport data to a Service Bus queue.
-This repo is 1 of 3 that were created based on a [Service Bus exercise](https://github.com/rtasalem/passport-data-sender/blob/main/docs/node-asb-exercise.png):
+This repo is 1 of 3 that was created based on a [Service Bus exercise](https://github.com/rtasalem/passport-data-sender/blob/main/docs/node-asb-exercise.png):
 1. [passport-data-sender](https://github.com/rtasalem/passport-data-sender)
 2. [passport-data-receiver](https://github.com/rtasalem/passport-data-receiver)
 3. [passport-data-subscriber]()
