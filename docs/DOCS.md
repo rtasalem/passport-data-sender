@@ -2,7 +2,7 @@
 
 ## Prerequisites
 
-- Service Bus created on Azure portal.
+- Service Bus created on Azure portal. For this application, a queue must exist within the Service Bus.
 
 ## Sending Messages to a Service Bus Queue
 
