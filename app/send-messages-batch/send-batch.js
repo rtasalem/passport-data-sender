@@ -9,17 +9,25 @@ const sender = sbClient.createSender(queue)
 const sendBatchToQueue = async (response) => {
   try {
     let batch = await sender.createMessageBatch()
+
     for (let i = 0; i < responses.length; i++) {
       const response = responses[i]
-      if (!batch.tryAddMessage(response)) {
+      const message = {
+        body: JSON.stringify(response),
+        contentType: 'application/json'
+      }
+      if (!batch.tryAddMessage(message)) {
         await sender.sendMessages(batch)
-        const batch = await sender.createMessageBatch()
+        batch = await sender.createMessageBatch()
 
-        if (!batch.tryAddMessage(responses[i])) {
-          throw new Error('Message too big to fit in a batch')
+        if (!batch.tryAddMessage(message)) {
+          throw new Error(
+            `Message too big to fit in batch. Please send smaller messages`
+          )
         }
       }
     }
+
     await sender.sendMessages(batch)
     console.log(`${responses.length} messages sent as batch to queue: ${queue}`)
   } catch (error) {
