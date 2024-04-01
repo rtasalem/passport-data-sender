@@ -38,6 +38,16 @@ const responses = [
     applicationNumber: '2352',
     dateSent: '2021-08-10',
     status: 'recieved: awaiting processing'
+  },
+  {
+    applicationNumber: '2045',
+    dateSent: '2078-09-05',
+    status: 'recieved: awaiting referral'
+  },
+  {
+    applicationNumber: '2352',
+    dateSent: '1988-10-15',
+    status: 'rejected: missed submission deadline for required documents'
   }
 ]
 
